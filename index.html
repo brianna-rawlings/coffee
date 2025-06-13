@@ -4,161 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Café Dream</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Quicksand&display=swap" rel="stylesheet" />
-  <style>
-    /* Color palette */
-    :root {
-      --cream: #f7f1e9;
-      --warm-brown: #6f4e37;
-      --soft-green: #8a9a5b;
-      --terracotta: #ca7e58;
-      --text-dark: #3a2f2f;
-    }
-    /* Reset & base */
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Quicksand', sans-serif;
-      background-color: var(--cream);
-      color: var(--text-dark);
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      font-family: 'Lora', serif;
-      margin-bottom: 0.3em;
-      color: var(--warm-brown);
-    }
-    p {
-      max-width: 600px;
-      margin-bottom: 1em;
-    }
-    a {
-      color: var(--terracotta);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    /* Container */
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 0;
-    }
-    /* Hero */
-    header {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80') no-repeat center center/cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: var(--cream);
-      padding: 0 1rem;
-    }
-    header h1 {
-      font-size: 3.5rem;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-      margin-bottom: 0.2rem;
-    }
-    header p {
-      font-size: 1.3rem;
-      font-style: italic;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-    }
-    /* Sections */
-    section {
-      padding: 3rem 0;
-      border-bottom: 1px solid #ddd3c7;
-    }
-    /* About */
-    #about p {
-      font-size: 1.1rem;
-    }
-    /* Menu */
-    #menu ul {
-      list-style: none;
-      padding-left: 0;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    #menu li {
-      background: var(--soft-green);
-      color: white;
-      padding: 0.75rem 1.2rem;
-      border-radius: 8px;
-      margin: 0.5rem 0;
-      font-weight: 600;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    /* Values */
-    #values {
-      text-align: center;
-      font-style: italic;
-      color: var(--warm-brown);
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    /* Contact */
-    #contact {
-      text-align: center;
-    }
-    #contact input[type="email"] {
-      padding: 0.8rem;
-      width: 250px;
-      max-width: 80%;
-      border: 2px solid var(--soft-green);
-      border-radius: 6px;
-      font-size: 1rem;
-      margin-right: 0.5rem;
-      outline: none;
-    }
-    #contact input[type="submit"] {
-      background-color: var(--terracotta);
-      border: none;
-      color: white;
-      padding: 0.9rem 1.5rem;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      font-weight: 700;
-      transition: background-color 0.3s ease;
-    }
-    #contact input[type="submit"]:hover {
-      background-color: #a55d42;
-    }
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      font-size: 0.9rem;
-      color: var(--warm-brown);
-      background-color: #f0e8df;
-      margin-top: 2rem;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.5rem;
-      }
-      #contact input[type="email"] {
-        margin-bottom: 1rem;
-        width: 100%;
-        margin-right: 0;
-      }
-      #contact input[type="submit"] {
-        width: 100%;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#values">Values</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <!-- Instagram SVG Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 24 24" >
+            <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7.125a4.875 4.875 0 110 9.75 4.875 4.875 0 010-9.75zm0 2.25a2.625 2.625 0 100 5.25 2.625 2.625 0 000-5.25zm4.5-2.625a1.125 1.125 0 11-2.25 0 1.125 1.125 0 012.25 0z"/>
+            </svg>
+        </a>
+        </div>
+    </nav>
+
+  <header id="top">
     <h1>The Café Dream</h1>
     <p>Come as you are, find peace in every cup.</p>
   </header>
@@ -197,5 +68,6 @@
   <footer>
     &copy; 2025 The Café Dream &mdash; Crafted with care by Brianna
   </footer>
+
 </body>
 </html>
